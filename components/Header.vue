@@ -1,14 +1,21 @@
 <template>
+<section>
 <!-- Navigation bar -->
   <header>
     <nav>
       <ul>
         <li><nuxt-link to="/">Inicio</nuxt-link></li>
-        <li><nuxt-link to="/articles">Artículos</nuxt-link></li>
+
       </ul>
     </nav>
   </header>
+  <p id="txti">Client Viewer</p>
+ 
+ </section>
+  
 </template>
+
+
 
 <style>
 body {
@@ -17,15 +24,16 @@ body {
 }
 
 a {
-  color: #FFFFFF;
+  color:whitesmoke;
   text-decoration: none;
 }
 
 header {
-  background-color: rgb(59, 140, 221);
-  font-size: 20px;
+  background-color: teal;
+  font-size: 45px;
+  font-family: fantasy;
   width: 100%;
-  height: 40px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,4 +51,14 @@ ul {
 li {
   margin: 0 10px;
 }
+#txti{
+color: firebrick;
+padding: 15px;
+margin: 20px;
+font-size: 25px;
+align-content: center;
+
+}
 </style>
+
+

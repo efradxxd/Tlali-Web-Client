@@ -1,29 +1,38 @@
 <template>
   <section class="single-article">
-    <h1>Editor</h1>
-    <!-- Form to show and edit article data -->
+        
     <form>
       <h2>ID:</h2>
-      <input type="text" id="id" v-bind:value="articlesData.ID">
+      <p> {{articlesData.ID}}</p>
+      
       <h2>Título:</h2>
-      <input type="text" id="title" v-bind:value="articlesData.ARTICLE.Title">
+      <p> {{articlesData.ARTICLE.Title}}</p>
+     
       <h2>Autor:</h2>
-      <input type="text" id="author" v-bind:value="articlesData.ARTICLE.Author">
+      <p> {{articlesData.ARTICLE.Author}}</p>
+      <p> {{articlesData.IMG.Author}}</p>
+      
       <h2>Fecha:</h2>
-      <input type="text" id="date" v-bind:value="articlesData.ARTICLE.DT">
+      <p> {{articlesData.ARTICLE.DT}}</p>
+      <p> {{articlesData.IMG.DT}}</p>
+     
       <h2>Localización</h2>
-      <input type="text" id="location" v-bind:value="articlesData.ARTICLE.Location">
+      <p> {{articlesData.ARTICLE.Location}}</p>
+      <p> {{articlesData.IMG.Location}}</p>
+      
       <h2>Estado de publicación:</h2>
-      <input type="text" id="status" v-bind:value="articlesData.ARTICLE.PublishStatus">
+      <p> {{articlesData.ARTICLE.PublishStatus}}</p>
+      
       <h2>Sección:</h2>
-      <input type="text" id="section" v-bind:value="articlesData.ARTICLE.Section">
+      <p> {{articlesData.ARTICLE.Section}}</p>
+      
       <h2>Etiquetas:</h2>
-      <input type="text" id="tags" v-bind:value="articlesData.ARTICLE.Tags">
+      <p> {{articlesData.ARTICLE.Tags}}</p>
+      
       <h2>Contenido:</h2>
-      <textarea id="content" v-bind:value="articlesData.ARTICLE.Content" rows="4" cols="50"></textarea>
+      <p> {{articlesData.ARTICLE.Content}}</p>
+      
       <br>
-      <!-- Button to update changes -->
-      <input type="button" id="submit" v-on:click="updateInfo()" value="Actualizar">
     </form>
   </section>
 </template>
@@ -70,7 +79,7 @@ export default {
           Author: "Test Author",
           DT: "Date Test",
           Location: "Location Test",
-          "S3-DIR": "Test dir"
+          S3DIR: "Test dir"
         }
       };
       return articleData;
@@ -90,9 +99,9 @@ export default {
 </script>
 
 <style scoped>
-#submit {
+/* #submit {
   background-color: rgb(230, 230, 230);
-}
+} */
 
 h1 {
   text-align: center;
@@ -106,13 +115,16 @@ h2 {
 }
 
 form {
-  padding: 10px;
-  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid slategray;
   margin: auto;
+  padding: 10px;
   width: 500px;
+
 }
 
-input,
+/* input,
 textarea {
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -121,5 +133,5 @@ textarea {
   width: 500px;
   margin-block-start: 2px;
   margin-block-end: 2px;
-}
+} */
 </style>
