@@ -1,5 +1,6 @@
 <template>
   <section class="single-article">
+    
         
     <form>
       <h2>ID:</h2>
@@ -134,4 +135,5 @@ textarea {
   margin-block-start: 2px;
   margin-block-end: 2px;
 } */
+
 </style>
