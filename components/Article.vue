@@ -39,7 +39,8 @@ h2 {
 .article {
   text-align: center;
   border: 1px solid #cccccc;
-  margin: 10px;
+  margin: 10px auto 10px auto;
+  width: 70%;
 }
 
 .article:hover {
