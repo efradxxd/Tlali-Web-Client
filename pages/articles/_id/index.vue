@@ -1,8 +1,17 @@
 <template>
   <section class="single-article">
+       <p id="txti">Tlali</p>
+        <div  class="imagenes" >
+         <img  src="@/assets/fb.png" class="imgfb">
+         <img src="@/assets/twi.jpg" class="imgtwi">
+        </div>
+      <hr id="hr1">
+      <br>
+      <br>
     
         
     <form>
+      
       <h2>ID:</h2>
       <p> {{articlesData.ID}}</p>
       
@@ -121,8 +130,49 @@ form {
   border: 2px solid slategray;
   margin: auto;
   padding: 10px;
-  width: 500px;
+  width: 800px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: grey;
 
+}
+.single-article{
+    padding: 30px;
+  display: block;
+  flex-flow: row wrap;
+  margin-left: 400px;
+  width: 50%;
+}
+#hr1 {
+  height: 10px;
+  margin: 0 20px;
+  background-color:red;
+  border: none;
+  /* height: 10px; */
+  width: 100%;
+  
+}
+#txti{
+color: midnightblue;
+padding: 15px;
+margin: 20px;
+font-size: 27px;
+align-content: center;
+font-weight: bold;
+}
+
+.imagenes{
+  margin-left: 750px;
+  display: flex;
+}
+
+.imgfb{
+  width: 18;
+  height: 30px;
+}
+
+.imgtwi{
+  width: 30;
+  height: 30px; 
 }
 
 /* input,
