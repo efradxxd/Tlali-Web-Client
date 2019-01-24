@@ -125,6 +125,8 @@ h1 {
 }
 
 h2 {
+  color: black;
+  font-weight: bold;
   font-size: 14px;
   margin-block-start: 2px;
   margin-block-end: 2px;
@@ -138,7 +140,7 @@ form {
   margin: 20px;
   align-self: auto;
   width: auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans';
   color: grey;
 
 
