@@ -1,5 +1,10 @@
+
 <template>
+
   <section class="single-article">
+        <script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-resize-text"></script>
+
        <p id="txti">Tlali</p>
         <div  class="imagenes" >
          <img  src="@/assets/fb.png" class="imgfb">
@@ -9,8 +14,9 @@
       <br>
       <br>
     
-        
+        <br>
     <form>
+      
       
       <h2>ID:</h2>
       <p> {{articlesData.ID}}</p>
@@ -125,19 +131,21 @@ h2 {
 }
 
 form {
+  
   box-sizing: border-box;
   text-align: center;
   border: 2px solid slategray;
-  margin: auto;
-  padding: 10px;
-  width: 800px;
+  margin: 20px;
+  align-self: auto;
+  width: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: grey;
+
 
 }
 .single-article{
     padding: 30px;
-  display: block;
+  display: flex;
   flex-flow: row wrap;
   margin-left: 400px;
   width: 50%;
@@ -171,6 +179,7 @@ font-weight: bold;
 }
 
 .imgtwi{
+  
   width: 30;
   height: 30px; 
 }

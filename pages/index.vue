@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-resize-text"></script>
 <template>
    <section class="articles">
     <!-- <img src="@/assets/menu.png" class="imgmenu"> -->
@@ -78,7 +80,7 @@ font-weight: bold;
 }
 
 .imgtwi{
-  width: 30;
+  width: 25;
   height: 30px; 
 }
 </style>
