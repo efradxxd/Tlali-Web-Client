@@ -1,10 +1,10 @@
 <template>
-
 <!-- Navigation bar -->
   <header>
-    <nav>
+    <nav class="borde">
       <ul>
-        <p id="txti">Menu</p>
+        
+        <p id="txti">Menú</p>
         <hr id="hr1">
         <br>
         <li><nuxt-link class="changecolor" to="/">Inicio</nuxt-link></li>
@@ -58,14 +58,11 @@
 
       </ul>
     </nav>
-  </header>
-  <!-- <p id="txti">Client Viewer</p> -->
  
-
+  </header>
   
+  <!-- <p id="txti">Client Viewer</p> -->
 </template>
-
-
 
 <style>
 body {
@@ -136,6 +133,18 @@ font-weight: bold;
   width: 80%;
   
 } 
+.imgmenu{
+  
+    margin-left: 10px;
+    display: flex;
+    width: 40;
+    height: 40px;
+}
+.borde{
+  border-color: brown;
+}
+
 </style>
+
 
 

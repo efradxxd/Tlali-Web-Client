@@ -1,7 +1,6 @@
 <template>
-
-  
-  <section class="articles">
+   <section class="articles">
+    <!-- <img src="@/assets/menu.png" class="imgmenu"> -->
     <p id="txti">Tlali</p>
     <div  class="imagenes" >
     <img  src="@/assets/fb.png" class="imgfb">
@@ -69,21 +68,17 @@ font-weight: bold;
 }
 
 .imagenes{
-
   margin-left: 750px;
   display: flex;
-  
 }
+
 .imgfb{
   width: 18;
   height: 30px;
-
-  
 }
+
 .imgtwi{
   width: 30;
-  height: 30px;
-
-  
+  height: 30px; 
 }
 </style>
