@@ -78,7 +78,7 @@ a {
 
 header {
   background-color:ghostwhite;
-  font-size: 25px;
+  font-size: 20px;
   font-family: fantasy;
   width: 400px;
   height: auto;
@@ -103,10 +103,9 @@ ul {
 
 li {
   margin: 0 20px;
-  padding: 2%;
+  padding: 3%;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
-
-
 }
 #txti{
 
