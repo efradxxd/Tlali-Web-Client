@@ -5,16 +5,6 @@
         <script src="https://unpkg.com/vue"></script>
 <script src="https://unpkg.com/vue-resize-text"></script>
 
-       <p id="txti">Tlali</p>
-        <div  class="imagenes" >
-         <img  src="@/assets/fb.png" class="imgfb">
-         <img src="@/assets/twi.jpg" class="imgtwi">
-        </div>
-      <hr id="hr1">
-      <br>
-      <br>
-    
-        <br>
     <form>
       
       
@@ -149,49 +139,5 @@ form {
   margin-left: 400px;
   width: 50%;
 }
-#hr1 {
-  height: 10px;
-  margin: 0 20px;
-  background-color:red;
-  border: none;
-  /* height: 10px; */
-  width: 100%;
-  
-}
-#txti{
-color: midnightblue;
-padding: 15px;
-margin: 20px;
-font-size: 27px;
-align-content: center;
-font-weight: bold;
-}
-
-.imagenes{
-  margin-left: 750px;
-  display: flex;
-}
-
-.imgfb{
-  width: 18;
-  height: 30px;
-}
-
-.imgtwi{
-  
-  width: 30;
-  height: 30px; 
-}
-
-/* input,
-textarea {
-  box-sizing: border-box;
-  border: 1px solid #cccccc;
-  padding: 5px;
-  margin: 5px;
-  width: 500px;
-  margin-block-start: 2px;
-  margin-block-end: 2px;
-} */
 
 </style>
