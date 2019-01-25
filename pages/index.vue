@@ -14,10 +14,10 @@
     <!-- Render and <Article/> component for each article fetched from articlesData -->
     <Article
       v-for="article in articlesData"
-      v-bind:key="article.ID"
-      v-bind:id="article.ID"
-      v-bind:author="article.ARTICLE.Author"
-      v-bind:title="article.ARTICLE.Title"
+      v-bind:key="article.id"
+      v-bind:id="article.id"
+      v-bind:author="article.author"
+      v-bind:title="article.article.title"
     />
   </section>
 
