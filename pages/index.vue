@@ -25,7 +25,7 @@
 
 <script>
 import Article from "@/components/Article"; //Get the Article component
-
+//Comentario de prueba 2
 export default {
   components: {
     Article //Declare components to use in this document/page
