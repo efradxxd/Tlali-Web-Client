@@ -41,8 +41,10 @@ export default {
   padding: 30px;
   display: block;
   flex-flow: row wrap;
-  margin-left: 400px;
+  /* margin-left: 400px; */
   width: 50%;
+  align-self: auto;
+   margin-left: 500px;
 }
 
 </style>

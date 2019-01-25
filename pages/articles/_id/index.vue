@@ -124,8 +124,9 @@ form {
   box-sizing: border-box;
   text-align: center;
   border: 2px solid slategray;
-  margin: 20px;
+  /* margin: 20px; */
   align-self: auto;
+   margin-left: 180px;
   width: 100%;
   font-family: 'Lucida Sans';
   color: grey;
