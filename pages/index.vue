@@ -19,7 +19,7 @@
 <script>
 import Article from "@/components/Article"; //Get the Article component
 //Comentario de prueba 2
-//Comentario 3
+//Comentario 4
 export default {
   components: {
     Article //Declare components to use in this document/page
