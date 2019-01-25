@@ -3,21 +3,14 @@
 <template>
    <section class="articles">
     <!-- <img src="@/assets/menu.png" class="imgmenu"> -->
-    <p id="txti">Tlali</p>
-    <div  class="imagenes" >
-    <img  src="@/assets/fb.png" class="imgfb">
-    <img src="@/assets/twi.jpg" class="imgtwi">
-    </div>
-  <hr id="hr1">
-  <br>
-  <br>
+   
     <!-- Render and <Article/> component for each article fetched from articlesData -->
     <Article
       v-for="article in articlesData"
-      v-bind:key="article.ID"
-      v-bind:id="article.ID"
-      v-bind:author="article.ARTICLE.Author"
-      v-bind:title="article.ARTICLE.Title"
+      v-bind:key="article.id"
+      v-bind:id="article.id"
+      v-bind:author="article.author"
+      v-bind:title="article.article.title"
     />
   </section>
 
@@ -25,7 +18,7 @@
 
 <script>
 import Article from "@/components/Article"; //Get the Article component
-
+//Comentario de prueba 2
 export default {
   components: {
     Article //Declare components to use in this document/page
@@ -48,39 +41,10 @@ export default {
   padding: 30px;
   display: block;
   flex-flow: row wrap;
-  margin-left: 400px;
+  /* margin-left: 400px; */
   width: 50%;
-}
-#hr1 {
-  height: 10px;
-  margin: 0 20px;
-  background-color:red;
-  border: none;
-  /* height: 10px; */
-  width: 100%;
-  
-}
-#txti{
-color: midnightblue;
-padding: 15px;
-margin: 20px;
-font-size: 27px;
-align-content: center;
-font-weight: bold;
+  align-self: auto;
+   margin-left: 500px;
 }
 
-.imagenes{
-  margin-left: 750px;
-  display: flex;
-}
-
-.imgfb{
-  width: 18;
-  height: 30px;
-}
-
-.imgtwi{
-  width: 25;
-  height: 30px; 
-}
 </style>

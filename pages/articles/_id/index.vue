@@ -5,48 +5,38 @@
         <script src="https://unpkg.com/vue"></script>
 <script src="https://unpkg.com/vue-resize-text"></script>
 
-       <p id="txti">Tlali</p>
-        <div  class="imagenes" >
-         <img  src="@/assets/fb.png" class="imgfb">
-         <img src="@/assets/twi.jpg" class="imgtwi">
-        </div>
-      <hr id="hr1">
-      <br>
-      <br>
-    
-        <br>
     <form>
       
       
       <h2>ID:</h2>
-      <p> {{articlesData.ID}}</p>
+      <p> {{articlesData.id}}</p>
       
       <h2>Título:</h2>
-      <p> {{articlesData.ARTICLE.Title}}</p>
+      <p> {{articlesData.article.title}}</p>
      
       <h2>Autor:</h2>
-      <p> {{articlesData.ARTICLE.Author}}</p>
-      <p> {{articlesData.IMG.Author}}</p>
+      <p> {{articlesData.author}}</p>
+      <p> {{articlesData.s3Dir}}</p>
       
       <h2>Fecha:</h2>
-      <p> {{articlesData.ARTICLE.DT}}</p>
-      <p> {{articlesData.IMG.DT}}</p>
+      <p> {{articlesData.dt}}</p>
+      <p> {{articlesData.s3Dir}}</p>
      
       <h2>Localización</h2>
-      <p> {{articlesData.ARTICLE.Location}}</p>
-      <p> {{articlesData.IMG.Location}}</p>
+      <p> {{articlesData.location}}</p>
+      <p> {{articlesData.s3Dir}}</p>
       
       <h2>Estado de publicación:</h2>
-      <p> {{articlesData.ARTICLE.PublishStatus}}</p>
+      <p> {{articlesData.publishStatus}}</p>
       
       <h2>Sección:</h2>
-      <p> {{articlesData.ARTICLE.Section}}</p>
+      <p> {{articlesData.article.section}}</p>
       
       <h2>Etiquetas:</h2>
-      <p> {{articlesData.ARTICLE.Tags}}</p>
+      <p> {{articlesData.article.tags}}</p>
       
       <h2>Contenido:</h2>
-      <p> {{articlesData.ARTICLE.Content}}</p>
+      <p> {{articlesData.article.content}}</p>
       
       <br>
     </form>
@@ -80,23 +70,20 @@ export default {
 //Build an object with the data from the form, return it as articleData
     buildJSON: function() {
       var articleData = {
-        ID:               document.getElementById("id").value,
-        ARTICLE: {
-          Author:         document.getElementById("author").value,
-          Content:        document.getElementById("content").value,
-          DT:             document.getElementById("date").value,
-          Location:       document.getElementById("location").value,
-          PublishStatus:  document.getElementById("status").value,
-          Section:        document.getElementById("section").value,
-          Tags:           document.getElementById("tags").value,
-          Title:          document.getElementById("title").value
+        id:             document.getElementById("id").value,
+        dt:             document.getElementById("date").value,
+        author:         document.getElementById("author").value,
+        location:       document.getElementById("location").value,
+        publishStatus:  document.getElementById("status").value,
+        s3Dir: "Test dir",
+        
+        article: {
+          content:        document.getElementById("content").value,    
+          section:        document.getElementById("section").value,
+          tags:           document.getElementById("tags").value,
+          title:          document.getElementById("title").value,
         },
-        IMG: {
-          Author: "Test Author",
-          DT: "Date Test",
-          Location: "Location Test",
-          S3DIR: "Test dir"
-        }
+
       };
       return articleData;
     }
@@ -137,9 +124,10 @@ form {
   box-sizing: border-box;
   text-align: center;
   border: 2px solid slategray;
-  margin: 20px;
+  /* margin: 20px; */
   align-self: auto;
-  width: auto;
+   margin-left: 180px;
+  width: 100%;
   font-family: 'Lucida Sans';
   color: grey;
 
@@ -152,49 +140,5 @@ form {
   margin-left: 400px;
   width: 50%;
 }
-#hr1 {
-  height: 10px;
-  margin: 0 20px;
-  background-color:red;
-  border: none;
-  /* height: 10px; */
-  width: 100%;
-  
-}
-#txti{
-color: midnightblue;
-padding: 15px;
-margin: 20px;
-font-size: 27px;
-align-content: center;
-font-weight: bold;
-}
-
-.imagenes{
-  margin-left: 750px;
-  display: flex;
-}
-
-.imgfb{
-  width: 18;
-  height: 30px;
-}
-
-.imgtwi{
-  
-  width: 30;
-  height: 30px; 
-}
-
-/* input,
-textarea {
-  box-sizing: border-box;
-  border: 1px solid #cccccc;
-  padding: 5px;
-  margin: 5px;
-  width: 500px;
-  margin-block-start: 2px;
-  margin-block-end: 2px;
-} */
 
 </style>
