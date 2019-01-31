@@ -1,18 +1,10 @@
 
 <template>
-
-  <section class="single-article">
-        <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-resize-text"></script>
-
-    <form>
+ <v-layout>
+    <v-flex xs12 sm6 offset-sm3>
       
       
-      <h2>ID:</h2>
-      <p> {{articlesData.id}}</p>
-      
-      <h2>Título:</h2>
-      <p> {{articlesData.article.title}}</p>
+      <h1> {{articlesData.article.title}}</h1>
      
       <h2>Autor:</h2>
       <p> {{articlesData.author}}</p>
@@ -38,9 +30,8 @@
       <h2>Contenido:</h2>
       <p> {{articlesData.article.content}}</p>
       
-      <br>
-    </form>
-  </section>
+   </v-flex>
+  </v-layout>
 </template>
 
 <script>
